@@ -1,0 +1,2 @@
+module NewYorkTimesHelper
+end
