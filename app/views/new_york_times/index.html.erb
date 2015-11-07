@@ -1,18 +1,8 @@
 <h1>Dance in NYC</h1>
 
-  <img src="../assets/images/profilePic1.jpg" height="250px" width="239">
+<!-- <img src="/assets/profilePic1.jpg" height="250px" width="239">-->
 
-
-<!-- HTML Example by Way2Tutorial.com -->
-<!-- <div style="height:100px;width:400px;border:solid 2px orange;overflow:scroll;overflow-x:hidden;overflow-y:scroll;">
-<p style="height:200px;">
-Scroll box automatic set in scroll in vertical scrollbar....<br /><br />
-Scroll box automatic set in scroll in vertical scrollbar....<br /><br />
-Scroll box automatic set in scroll in vertical scrollbar....<br /><br />
-Scroll box automatic set in scroll in vertical scrollbar....</p>
-</div>
-<p><a href="http://www.way2tutorial.com/html/example/index.php">HTML Example</a></p> -->
-
+<%= image_tag 'profilePic1.jpg', :class => ""%>
 
 <dl>
 <!-- <p style="height:200px;"> -->
@@ -22,7 +12,7 @@ Scroll box automatic set in scroll in vertical scrollbar....</p>
     <dd class='venue'><%= listing['venue_name'] %>
     <dd class='address'><%= listing['street_address'] %>
     <dd class='when'><%= listing['date_time_description'] %>
-    <dd class='description'><%= listing['web_description'] %>
+    <dd class='description'><%= listing['web_description'].html_safe %>
 <% end %>
 </dl>
 
@@ -33,3 +23,21 @@ Scroll box automatic set in scroll in vertical scrollbar....</p>
 
   <% end %>
 </dl> -->
+
+<select>
+<options name="select">
+  <option value="value1">Dance</option>
+  <option value="value2" selected>Theater</option>
+  <option value="value3">Movies</option>
+</select>
+
+
+<select>
+options_for_select("Dance", "Theater")
+# => <option value="Dance">Dance</option>
+# => <option value="Theater">Theater</option>
+selected = options[:value]
+</select>
+
+<% def select_event(selected) %>
+<% end %>
