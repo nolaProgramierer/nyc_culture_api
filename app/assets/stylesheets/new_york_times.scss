@@ -2,6 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// #wrapper {
+//   width: 100%;
+//   margin-left: 100px;
+//   margin-right: auto;
+// }
 
 #title {
   text-align: center;
@@ -9,10 +14,7 @@
   opacity: 0.8;
   font-size: 36px;
   font-style: italic;
-
-
 }
-
 dl {
   height: 400px;
   width: 800px;
@@ -22,7 +24,8 @@ dl {
   overflow-y: scroll;
   background-color: white;
   opacity: 0.8;
-
+  margin-left: 112px;
+  margin-top: 0px;
 }
 dt {
   font-size: 24px;

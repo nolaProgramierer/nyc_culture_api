@@ -2,15 +2,14 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-d<script language="JavaScript" type="text/javascript">
-<!--
-function showSelected()
-{
-	var selObj = document.getElementById('styled_select');
-
-
-	var selIndex = selObj.selectedIndex;
-	
-}
-//-->
-</script>
+# $(function(){
+#   $('select[name="selected"]').change(function() {
+#     $.ajax({
+#       url: 'new_york_times/index',
+#       data: 'selected=' + this.value,
+#       success: function () {
+#         location.reload();
+#       }
+#     });
+#   });
+# });
