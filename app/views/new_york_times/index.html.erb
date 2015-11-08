@@ -1,11 +1,16 @@
-<h1>Dance in NYC</h1>
+<div><h1>Dance in NYC</h1></div>
 
 <!-- <img src="/assets/profilePic1.jpg" height="250px" width="239">-->
-
+<div>
 <%= image_tag 'profilePic1.jpg', :class => ""%>
+</div>
 
+<div>
+<%= select_tag "event", options_for_select([["Dance", 1], ["Theater", 2], ["Movies", 3]], 1)%>
+</div
+
+<div>
 <dl>
-<!-- <p style="height:200px;"> -->
   <!-- sort array of string hashes -->
 <% @results.sort_by do |listing| %>
     <dt><%= listing['event_name'] %>
@@ -15,7 +20,7 @@
     <dd class='description'><%= listing['web_description'].html_safe %>
 <% end %>
 </dl>
-
+</div>
 <!-- <dl>
   <% @events.each do |key, value| %>
     <dt><%# key %>
@@ -23,21 +28,3 @@
 
   <% end %>
 </dl> -->
-
-<select>
-<options name="select">
-  <option value="value1">Dance</option>
-  <option value="value2" selected>Theater</option>
-  <option value="value3">Movies</option>
-</select>
-
-
-<select>
-options_for_select("Dance", "Theater")
-# => <option value="Dance">Dance</option>
-# => <option value="Theater">Theater</option>
-selected = options[:value]
-</select>
-
-<% def select_event(selected) %>
-<% end %>

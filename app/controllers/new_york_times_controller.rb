@@ -6,16 +6,20 @@ class NewYorkTimesController < ApplicationController
     @events = JSON::parse(response.body)
     # isolates the 'results' array of hashes
     @results = @events['results']
+
   end
 
+    def event
+     "Theater"
+   end
   # def select_event(event)
   #   @event = event
   # end
 
 
-  def event
-    @event = "Theater"
-  end
+  # def method(event)
+  #   @event = event
+  # end
 
 
 end
