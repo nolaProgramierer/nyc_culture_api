@@ -1,12 +1,12 @@
 <div id="title"><h1>Cultural Events</h1></div>
 
 <div class="styled_select">
-  <%= select_tag "event", options_for_select([["Dance", 1], ["Theater", 2], ["Movies", 3]], 1)%>
+  <%= select_tag(:option, options_for_select([["Dance", 1], ["Theater", 2], ["Movies", 3]], selected: :option )) %>
 </div
 
 <div id="eventBox">
   <dl>
-    <!-- sort array of string hashes -->
+    <!-- sort controller 'results' array of string hashes by key -->
     <% @results.sort_by do |listing| %>
         <dt><%= listing['event_name'] %>
         <dd class='venue'><%= listing['venue_name'] %>
@@ -16,12 +16,3 @@
     <% end %>
   </dl>
 </div><!--eventBox-->
-
-
-<!-- <dl>
-  <% @events.each do |key, value| %>
-    <dt><%# key %>
-    <dd><%# value %>
-
-  <% end %>
-</dl> -->
