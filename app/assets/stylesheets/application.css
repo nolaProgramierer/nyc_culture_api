@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
- body {
-   background-color: white;
- }
+
+body {
+  width: 1024;
+  height: 700;
+  background-image: url("/assets/nyc_bckgrd0.jpg");
+
+}

@@ -1,6 +1,7 @@
 // Place all the styles related to the NewYorkTimes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 dl {
   height: 400px;
   width: 800px;
@@ -8,7 +9,15 @@ dl {
   overflow: scroll;
   overflow-x: hidden;
   overflow-y: scroll;
+  background-color: white;
+  opacity: 0.8;
+
 }
 dt {
   font-size: 24px;
+}
+.eventBox {
+
+
+
 }
