@@ -1,7 +1,6 @@
 class NewYorkTimesController < ApplicationController
   def index
-
-    # @events = "Theater"
+  # @events = "Theater"
     key = 'f528e2fc1d19595d065143ed0b6aa700:18:26374763'
     response = HTTParty.get("http://api.nytimes.com/svc/events/v2/listings.json?&filters=category:(#{get_event})&api-key=#{key}")
     # returns a series of arrays
@@ -11,6 +10,6 @@ class NewYorkTimesController < ApplicationController
   end
 
   def get_event
-    @events = params[:radios1]
+    params[:radios1]
   end
 end
