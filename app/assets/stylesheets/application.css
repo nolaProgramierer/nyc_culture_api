@@ -25,7 +25,7 @@ body {
   margin-right: auto;
   margin-bottom: 100px;
   margin-top:100px;
-  box-shadow: 10px 10px 10px #592a19;
-	-moz-box-shadow: 10px 10px 10px #592a19;
-	-webkit-box-shadow: 10px 10px 10px #592a19;
+  box-shadow: 15px 15px 15px #592a19;
+	-moz-box-shadow: 15px 15px 15px #592a19;
+	-webkit-box-shadow: 15px 15px 15px #592a19;
 }

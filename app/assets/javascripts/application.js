@@ -14,14 +14,3 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-$(function(){
-  $('select[name="selected"]').change(function() {
-    $.ajax({
-      url: 'new_york_times/index',
-      data: 'selected=' + this.value,
-      success: function () {
-        location.reload();
-      }
-    });
-  });
-});
