@@ -1,4 +1,3 @@
-
   <div id="title"><h1>Cultural Events</h1></div>
   <form id="radio_form">
         Select type of your type of entertainment.
@@ -9,15 +8,4 @@
         <br>
         <input id="submit_button" type="submit" value="Click here"/>
   </form>
-<div id="eventBox">
-    <dl>
-      <!-- sort controller 'results' array of string hashes by key -->
-      <% @results.sort_by do |listing| %>
-          <dt><%= listing['event_name'] %>
-          <dd class='venue'><%= listing['venue_name'] %>
-          <dd class='address'><%= listing['street_address'] %>
-          <dd class='when'><%= listing['date_time_description'] %>
-          <dd class='description'><%= listing['web_description'].html_safe %>
-      <% end %>
-    </dl>
-  </div><!--eventBox-->
+<%= render partial: "layouts/results" %>
