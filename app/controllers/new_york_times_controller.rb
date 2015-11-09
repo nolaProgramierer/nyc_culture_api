@@ -13,5 +13,4 @@ class NewYorkTimesController < ApplicationController
   def get_event
     @events = params[:radios1]
   end
-
 end

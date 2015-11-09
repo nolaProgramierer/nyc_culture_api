@@ -1,15 +1,5 @@
 
   <div id="title"><h1>Cultural Events</h1></div>
-
-  <!-- <div id="styled_select">
-    <%# select_tag(:option, options_for_select([["Dance", 1], ["Theater", 2], ["Movies", 3]], selected: :option )) %>
-  </div -->
-
-  <!-- <%# radio_button_tag(:event, "Movies") %>
-  <%# label_tag(:dance_event, "Movies") %>
-  <%# radio_button_tag(:event, "Theater") %>
-  <%# label_tag(:theater_event, "Theater") %> -->
-
   <form id="radio_form">
         Select type of your type of entertainment.
         <br>
@@ -17,13 +7,9 @@
         <input type="radio" name="radios1" value="Movies">Movies
         <input type="radio" name="radios1" value="Dance">Dance
         <br>
-        <input type="submit"/>
+        <input type="submit" value="Click here"/>
   </form>
-
-
-
-
-  <div id="eventBox">
+<div id="eventBox">
     <dl>
       <!-- sort controller 'results' array of string hashes by key -->
       <% @results.sort_by do |listing| %>
