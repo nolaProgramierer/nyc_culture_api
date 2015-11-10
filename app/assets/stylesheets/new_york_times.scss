@@ -2,12 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// #wrapper {
-//   width: 100%;
-//   margin-left: 100px;
-//   margin-right: auto;
-// }
-
 #title {
   text-align: center;
   color: white;
@@ -30,12 +24,7 @@ dl {
 dt {
   font-size: 24px;
 }
-.styled_select select{
-  height: 25px;
-  width: 100px;
-  font-size: 14px;
-}
-#event-forms {
+#events-form {
   height: 60px;
   width: 300px;
   background-color: white;
@@ -44,6 +33,7 @@ dt {
   margin-left: 115px;
   border: solid 2px orange;
 }
-#submit_button {
+.submit_btn {
   margin-left: 110px;
+  margin-top: 10px;
 }
