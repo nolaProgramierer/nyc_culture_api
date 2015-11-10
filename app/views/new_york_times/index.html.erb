@@ -1,11 +1,16 @@
-  <div id="title"><h1>Cultural Events</h1></div>
-  <form id="radio_form">
-        Select type of your type of entertainment.
-        <br>
-        <input type="radio" name="radios1" value="Theater" checked="checked">Theater
-        <input type="radio" name="radios1" value="Movies">Movies
-        <input type="radio" name="radios1" value="Dance">Dance
-        <br>
-        <input id="submit_button" type="submit" value="Click here"/>
-  </form>
-<%= render partial: "layouts/results" %>
+  <div id="title">
+    <h1>Cultural Events</h1>
+  </div>
+  
+  <%= form_tag(events_path, id: "events-form") do %>
+    <%= label_tag 'event', 'Select type of your type of entertainment.' %>
+    <%= radio_button_tag :event_type, 'Theater' %>Theater
+    <%= radio_button_tag :event_type, 'Movies' %>Movies
+    <%= radio_button_tag :event_type, 'Dance' %>Dance
+    <br>
+    <%= submit_tag %>
+  <% end %>
+
+
+
+<%= render partial: "results" %>
