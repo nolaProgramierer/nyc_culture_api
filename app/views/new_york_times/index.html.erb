@@ -7,10 +7,10 @@
     <%= radio_button_tag :event_type, 'Theater' %>Theater
     <%= radio_button_tag :event_type, 'Movies' %>Movies
     <%= radio_button_tag :event_type, 'Dance' %>Dance
+    <%= radio_button_tag :event_type, 'Jazz' %>Jazz
+    <%= radio_button_tag :event_type, 'Classical' %>Classical
     <br>
     <%= submit_tag "Select here", class: "submit_btn" %>
   <% end %>
-
-
 
 <%= render partial: "results" %>
