@@ -35,8 +35,8 @@ dt {
   width: 100px;
   font-size: 14px;
 }
-#event-forms {
-  height: 60px;
+#events-form {
+  height: 65px;
   width: 350px;
   background-color: white;
   opacity: 0.8;
@@ -44,12 +44,11 @@ dt {
   margin-left: 115px;
   border: solid 2px orange;
 }
-<<<<<<< HEAD
+
 .submit_btn {
   margin-left: 130px;
-  margin-top: 10px;
-=======
-#submit_button {
-  margin-left: 110px;
->>>>>>> parent of 3d3a976... Styling changes for submit form
+  margin-top: 5px;
+}
+#selection-text{
+  margin-left: 35px;
 }
