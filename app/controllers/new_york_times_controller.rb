@@ -3,8 +3,10 @@ class NewYorkTimesController < ApplicationController
   NYT_BASE_URL = "http://api.nytimes.com/svc/events/v2/listings.json"
 
   def index
+
     event_string =  if params[:event_type].present?
                       params[:event_type]
+                      
                     else
                       "Theater"
                     end

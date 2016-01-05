@@ -1,16 +1,16 @@
   <div id="title">
     <h1>Cultural Events</h1>
   </div>
-
+  
   <%= form_tag(events_path, id: "events-form") do %>
-    <%# label_tag 'event', 'Select type of your type of entertainment.' %>
+    <%= label_tag 'event', 'Select type of your type of entertainment.' %>
     <%= radio_button_tag :event_type, 'Theater' %>Theater
     <%= radio_button_tag :event_type, 'Movies' %>Movies
     <%= radio_button_tag :event_type, 'Dance' %>Dance
     <%= radio_button_tag :event_type, 'Jazz' %>Jazz
     <%= radio_button_tag :event_type, 'Classical' %>Classical
     <br>
-    <%= submit_tag "Select here", class: "submit_btn" %>
+    <%= submit_tag %>
   <% end %>
 
 <%= render partial: "results" %>
