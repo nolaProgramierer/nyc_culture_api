@@ -17,8 +17,8 @@ html {
   background-color: black;
 }
 body {
-  /*background-image: url('/assets/nyc_bckgrd2.jpg');*/
-  background-image: image-url('nyc_bckgrd2.jpg');
+  background-image: url('/assets/nyc_bckgrd2.jpg');
+  /*background-image: image-url('nyc_bckgrd2.jpg');*/
 
   background-repeat: no-repeat;
   width: 1024px;
