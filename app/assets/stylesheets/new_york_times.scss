@@ -7,7 +7,23 @@
 //   margin-left: 100px;
 //   margin-right: auto;
 // }
-
+html {
+  background-color: black;
+}
+body {
+  // background-image: url('/assets/nyc_bckgrd2.jpg');
+  background-image: url('nyc_bckgrd2.jpg');
+  background-repeat: no-repeat;
+  width: 1024px;
+  height: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  box-shadow: 15px 15px 15px #592a19;
+	-moz-box-shadow: 15px 15px 15px #592a19;
+	-webkit-box-shadow: 15px 15px 15px #592a19;
+}
 #title {
   text-align: center;
   color: white;
